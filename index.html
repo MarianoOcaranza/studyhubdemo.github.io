@@ -12,29 +12,44 @@
 
 </head>
 <body>
-    <header>
+    <header class="navbar">
         <div class="logo">
-            <img src="assets/img/book.svg" alt="Logo de StudyHub">
+            <span>S.H.</span>
             <span>StudyHub</span>
         </div>
-        <div class="nav-center">
+        
+        <div class="nav-center" id="nav-center">
             <nav>
-                <a href="#caracteristicas">Caracteristicas</a>
-                <a href="">Como funciona</a>
-                <a href="">Referencias</a>
+                <a id='menu-option' href="">Caracteristicas</a>
+                <a id='menu-option' href="">Como funciona</a>
+                <a id='menu-option' href="">Referencias</a>
             </nav>
         </div>
-
         <div class="nav-actions">
             <nav>
                 <a href="#login">Iniciar sesion</a>
                 <button type="button" >Registrarse</button>
             </nav>
         </div>
+        <div class="burger-menu" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>    
     </header>
-
+    <nav class="mobilenav">
+        <div>
+            <p class="close-menu" id="close-menu">Cerrar</p>
+        </div>
+        <div class="nav-center-mobile" id="mobileMenu">
+            <a id='menu-option' href="">Caracteristicas</a>
+            <a id='menu-option' href="">Como funciona</a>
+            <a id='menu-option' href="">Referencias</a>
+        </div> 
+    </nav>
+   
+     
     
-
     <main>
         <div class="content-main">
             <h1>Preparate para tus examenes de manera inteligente</h1>
@@ -98,4 +113,5 @@
     </section>
 
 </body>
+<script src="assets/js/nav.js"></script>
 </html>
