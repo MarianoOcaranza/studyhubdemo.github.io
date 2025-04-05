@@ -30,34 +30,14 @@ body {
     display: flex;
     gap: 20px;
 }
+.mobilenav {
+    display: none;
+}
 
 .nav-center a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-}
-.mobilenav {
-    display: flex;
-    background-color: beige;
-    justify-content: center;
-}
-
-.nav-center-mobile {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 100%;
-    padding: 30px;
-    right: 0;
-    z-index: 999;
-}
-
-.nav-center-mobile a {
-    margin: 15px 0;
-    font-size: 20px;
-    text-decoration: none;
-    color: #333;
 }
 
 .burger-menu {
@@ -115,13 +95,16 @@ header .logo span {
     align-items: center;
     justify-content: flex-end;
 }
-
+.nav-actions-mobile {
+    align-items: center;
+}
 .nav-actions nav {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
 }
+
 .nav-actions button {
     background-color: black;
     color: white;
@@ -458,20 +441,86 @@ section {
         width: 100%;
         max-width: 300px;
     }    
-    .nav-center {
-        display: none;
+   .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+   }
+   .burger-menu {
+    display: flex;
+   }
+   .nav-center {
+    display: none;
+   }
+   .nav-actions {
+    display: none;
+   }
+   .mobilenav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 60px;
+    z-index: 9999;
+    display: none;
     }
 
-    .burger-menu {
+    .mobilenav.active {
         display: flex;
     }
-    .nav-center-mobile.active {
+
+    .close-menu {
         display: flex;
+        align-self: flex-end;
+        padding: 15px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
     }
-    #menu-option {
+
+    .nav-center-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 0;
         width: 100%;
     }
-    .close-menu.active {
+
+    .nav-center-mobile a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-actions-mobile {
         display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .nav-actions-mobile a {
+        font-size: 16px;
+    }
+
+    .nav-actions-mobile button {
+        width: auto;
+        background-color: black;
+        color: white;
+        padding: 10px 15px 10px 15px;
+        margin: 5px 5px 5px 0px;
+        border-radius: 5px;
+        border: 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s;
     }
 }

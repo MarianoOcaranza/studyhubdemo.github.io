@@ -1,7 +1,7 @@
 const navcenter = document.getElementById("nav-center")
 const navcentermobile = document.getElementById("nav-center-mobile")
 const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenu = document.getElementById('mobilenav');
 const closeButton = document.getElementById('close-menu')
 
 
