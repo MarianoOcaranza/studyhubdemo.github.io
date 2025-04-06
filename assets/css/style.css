@@ -456,7 +456,7 @@ section {
     display: none;
    }
    .mobilenav {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     width: 100%;
@@ -464,7 +464,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding-top: 60px;
     z-index: 9999;
     display: none;
     }
