@@ -23,7 +23,7 @@ body {
     position: fixed;
     background-color: whitesmoke;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

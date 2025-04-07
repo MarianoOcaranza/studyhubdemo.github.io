@@ -23,18 +23,3 @@ options.forEach((option)=> {
     })
 })
 
-window.onresize=()=> {
-    if(window.innerWidth >= 768) {
-        open.style.display = 'none';
-        close.style.display = 'none';
-        navcenter.style.display = 'flex';
-        navcentermobile.style.display = 'none';
-    }
-    else {
-        open.style.display = 'flex';
-        close.style.display = 'none';
-        navcenter.style.display = 'none';
-        navcentermobile.style.display = 'none';
-    }
-};
-
