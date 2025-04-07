@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
     position: fixed;
     background-color: whitesmoke;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -329,6 +330,13 @@ section {
         align-items: center;
         justify-content: center;
         padding: 20px;
+    }
+    .content-main h1,
+    .content-main p {
+        padding-right: 0;
+    }
+    .content-main {
+        min-width: 100%;
     }
     
     .imagen-principal {
