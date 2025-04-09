@@ -7,10 +7,10 @@ const options = document.querySelectorAll('#menu-option-mobile')
 
 burger.addEventListener('click', () => {
     if (mobileMenu.classList.contains('active')) {
-        menuIcon.src = '/assets/img/menu.svg'
+        menuIcon.src = './assets/img/menu.svg'
     }
     else {
-        menuIcon.src = '/assets/img/close.svg'
+        menuIcon.src = './assets/img/close.svg'
     }
     mobileMenu.classList.toggle('active');
 });
@@ -18,7 +18,6 @@ burger.addEventListener('click', () => {
 options.forEach((option)=> {
     option.addEventListener('click', ()=>{
         mobileMenu.classList.remove('active');
-        menuIcon.src = '/assets/img/menu.svg'
+        menuIcon.src = './assets/img/menu.svg'
     })
 })
-
